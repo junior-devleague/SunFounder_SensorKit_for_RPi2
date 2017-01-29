@@ -12,7 +12,8 @@ Ensure your Raspberry Pi 2 has these configurations:
 Resource: https://github.com/junior-devleague/jr-devleague-raspberry-pi-projects/blob/master/config.md
 
 ## Install Dependencies
-Run `sudo npm i` and this will install all the packages needed for the program
+- Navigate to the directory you would like to work in until you see the JavaScript file
+- Run `sudo npm i` and this will install all the packages needed for the program
 
 ## Usage
 Run the program with `sudo node [filename].js`
