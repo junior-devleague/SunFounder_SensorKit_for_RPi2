@@ -1,8 +1,8 @@
 var wpi = require('wiring-pi');
 
 var LaserPin = 0;
-console.log(wpi);
 
+//Function which gives a delay in time before the next command
 function delay(ms) {
     var cur_d = new Date();
     var cur_ticks = cur_d.getTime();
@@ -20,15 +20,25 @@ function main(){
 		console.log("setup wiringPi failed!");
 		return;
 	}
+	
 	wpi.pinMode(LaserPin, wpi.OUTPUT);
 	console.log("pin mode");
+	
+	//Set LedPin high (+3.3V) to turn off led
+	//This will turn OFF laser;
+	console.log("Laser off");
 	wpi.digitalWrite(LaserPin, wpi.HIGH);
-	console.log("High");
 	delay(5000);
+	
+	//This will turn ON laser after waiting 5 seconds
+	console.log("Laser on");
 	wpi.digitalWrite(LaserPin, wpi.LOW);
-	console.log("Low");
 	delay(5000);
+	
+	//This will turn OFF laser after waiting 5 seconds
+	console.log("Laser off");
 	wpi.digitalWrite(LaserPin, wpi.HIGH);
-	console.log("high");
 }
+
+//Run main function
 main();
