@@ -16,4 +16,5 @@ Resource: https://github.com/junior-devleague/jr-devleague-raspberry-pi-projects
 - Run `sudo npm i` and this will install all the packages needed for the program
 
 ## Usage
-Run the program with `sudo node [filename].js`
+- Ensure you read the [safety](https://github.com/junior-devleague/jr-devleague-raspberry-pi-projects/blob/master/README.md) portion of the Raspberry Pi kit
+- Run the program with `sudo node [filename].js`
