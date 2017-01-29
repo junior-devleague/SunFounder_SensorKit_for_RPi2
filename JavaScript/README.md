@@ -10,3 +10,9 @@ Ensure your Raspberry Pi 2 has these configurations:
 - WiringPi
 
 Resource: https://github.com/junior-devleague/jr-devleague-raspberry-pi-projects/blob/master/config.md
+
+## Install Dependencies
+Run `sudo npm i` and this will install all the packages needed for the program
+
+## Usage
+Run the program with `sudo node [filename].js`
