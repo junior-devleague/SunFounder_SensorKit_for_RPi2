@@ -11,7 +11,7 @@ function main ()
         wpi.pcf8591Setup (PCF, 0x48);
         while(1) // loop forever
         {
-                value = wpi.analogRead(PCF);
+                value = wpi.analogRead(PCF + 0);
                 console.log(value);
                 if (value < 100){
                         count++;
